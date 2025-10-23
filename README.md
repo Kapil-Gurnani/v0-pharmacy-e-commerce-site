@@ -1,30 +1,108 @@
-# Pharmacy E-commerce Site
+# Vellacure - Pharmacy E-commerce Site
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A modern pharmacy e-commerce platform built with Next.js, featuring product catalog, shopping cart, user authentication, and admin dashboard.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kapils-projects-e6717b11/v0-pharmacy-e-commerce-site)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/f9cYGVwOW1A)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://yourusername.github.io/v0-pharmacy-e-commerce-site)
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 
-## Overview
+## Features
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+- 🏥 **Product Catalog**: Browse medicines and healthcare products
+- 🛒 **Shopping Cart**: Add to cart and manage items
+- 👤 **User Authentication**: Login/signup with phone number
+- 📱 **Admin Dashboard**: Manage products, orders, and analytics
+- 📊 **Analytics**: Sales reports and order tracking
+- 🎨 **Modern UI**: Clean, responsive design with Tailwind CSS
 
-## Deployment
+## Tech Stack
 
-Your project is live at:
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Database**: Supabase
+- **Authentication**: Supabase Auth
+- **Charts**: Recharts
+- **Icons**: Lucide React
 
-**[https://vercel.com/kapils-projects-e6717b11/v0-pharmacy-e-commerce-site](https://vercel.com/kapils-projects-e6717b11/v0-pharmacy-e-commerce-site)**
+## Deployment to GitHub Pages
 
-## Build your app
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
-Continue building your app on:
+### Setup Instructions
 
-**[https://v0.app/chat/projects/f9cYGVwOW1A](https://v0.app/chat/projects/f9cYGVwOW1A)**
+1. **Push to GitHub**: Push your code to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Set source to "GitHub Actions"
+3. **Automatic Deployment**: The site will be automatically deployed when you push to the `main` branch
 
-## How It Works
+### Manual Deployment
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+To deploy manually:
+
+```bash
+# Install dependencies
+npm install
+
+# Build the application
+npm run build
+
+# The static files will be generated in the `out` directory
+```
+
+### Configuration
+
+The deployment is configured in:
+- `.github/workflows/deploy.yml` - GitHub Actions workflow
+- `next.config.mjs` - Next.js configuration for static export
+- `package.json` - Build scripts
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+## Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── admin/             # Admin dashboard pages
+│   ├── cart/              # Shopping cart
+│   ├── products/          # Product pages
+│   └── ...
+├── components/            # React components
+│   ├── admin/            # Admin components
+│   ├── auth/             # Authentication components
+│   ├── cart/             # Cart components
+│   └── ui/               # UI components
+├── lib/                  # Utility functions
+└── public/               # Static assets
+```
+
+## Environment Variables
+
+Create a `.env.local` file with your Supabase credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
