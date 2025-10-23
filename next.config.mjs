@@ -13,6 +13,7 @@ const nextConfig = {
   trailingSlash: true,
   basePath: '/v0-pharmacy-e-commerce-site',
   assetPrefix: '/v0-pharmacy-e-commerce-site/',
+  distDir: 'out',
 }
 
 export default nextConfig
