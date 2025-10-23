@@ -1,8 +1,14 @@
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { getProductBySlug } from "@/lib/products"
+import { getProductBySlug, allProducts } from "@/lib/products"
 import { AddToCart } from "@/components/cart/add-to-cart"
+
+export function generateStaticParams() {
+  return allProducts.map((product) => ({
+    slug: product.slug,
+  }))
+}
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const product = getProductBySlug(params.slug)
