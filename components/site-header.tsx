@@ -47,7 +47,7 @@ export function SiteHeader() {
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Stethoscope className="h-5 w-5 text-primary" aria-hidden />
-          <span className="text-pretty">MediCare</span>
+          <span className="text-pretty">Vellacure</span>
         </Link>
 
         {/* Desktop nav */}

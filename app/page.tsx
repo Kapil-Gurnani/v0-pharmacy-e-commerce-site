@@ -56,7 +56,7 @@ export default function HomePage() {
 
       <section aria-labelledby="values-heading" className="rounded-lg border bg-card p-6">
         <h2 id="values-heading" className="text-xl font-semibold">
-          Why shop with MediCare
+          Why shop with Vellacure
         </h2>
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <li className="rounded-md bg-secondary p-4">

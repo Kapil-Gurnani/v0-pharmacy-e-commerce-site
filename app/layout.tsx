@@ -12,8 +12,8 @@ import { CartProvider } from "@/components/cart/cart-context"
 import { AuthProvider } from "@/components/auth/auth-context"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Vellacure",
+  description: "Trusted pharmacy essentials, delivered with care",
   generator: "v0.app",
 }
 

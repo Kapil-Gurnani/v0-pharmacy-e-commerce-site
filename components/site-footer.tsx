@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="mt-16 border-t bg-secondary">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 sm:px-6 lg:px-8">
         <div>
-          <p className="font-semibold">MediCare</p>
+          <p className="font-semibold">Vellacure</p>
           <p className="mt-2 text-sm text-muted-foreground">
             Everyday healthcare, clearly explained and fairly priced.
           </p>
@@ -29,7 +29,7 @@ export function SiteFooter() {
         </nav>
 
         <div className="text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} MediCare, Inc.</p>
+          <p>&copy; {new Date().getFullYear()} Vellacure, Inc.</p>
           <p>All rights reserved.</p>
         </div>
       </div>
