@@ -4,7 +4,7 @@ import type { Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
-import { SiteHeaderStatic } from "@/components/site-header-static"
+import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { AuthProvider } from "@/components/auth/auth-context"
 import { CartProvider } from "@/components/cart/cart-context"
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased overflow-x-hidden`}>
         <AuthProvider>
           <CartProvider>
-            <SiteHeaderStatic />
+            <SiteHeader />
             <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8">{children}</main>
             <SiteFooter />
           </CartProvider>
