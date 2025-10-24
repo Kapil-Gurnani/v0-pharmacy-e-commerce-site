@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import OrdersGate from "@/components/orders/orders-gate"
 
 export const metadata = {
@@ -11,7 +12,9 @@ export default function OrdersPage() {
         <h1 className="text-balance text-2xl font-semibold md:text-3xl">My Orders</h1>
         <p className="text-pretty text-muted-foreground">Track the status and delivery of your recent purchases.</p>
       </header>
-      <OrdersGate />
+      <Suspense fallback={<div>Loading...</div>}>
+        <OrdersGate />
+      </Suspense>
     </main>
   )
 }
